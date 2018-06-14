@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { Form } from 'semantic-ui-react';
 import axios from'axios';
 import Router from 'next/router';
-import config.viralLoopAPI from '../config';
-
-CONST API_TOKEN = config.viralLoopAPI;
 
 class BetaForm extends Component {
   state = {
@@ -32,7 +29,7 @@ class BetaForm extends Component {
         },
         "refSource": ""
     },
-    "apiToken": API_TOKEN
+    "apiToken": this.props.api
     }
 
     axios.post(`https://app.viral-loops.com/api/v2/events`, user, header)

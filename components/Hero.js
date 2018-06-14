@@ -17,7 +17,7 @@ class Hero extends Component {
             <li>First In The Q Profile Badge</li>
             <li>1000 more Qredits for every successful friend referral.</li>
           </ul>
-          <BetaForm />
+          <BetaForm api={this.props.api}/>
         </Grid.Column>
         <Grid.Column width={6}>
         </Grid.Column>

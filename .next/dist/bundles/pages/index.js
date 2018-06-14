@@ -308,10 +308,171 @@ var _jsxFileName = "/Users/shaunyap/Documents/chatq/components/Benefits.js";
 /***/ }),
 
 /***/ "./components/BetaForm.js":
-/***/ (function(module, __webpack_exports__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-throw new Error("Module build failed: SyntaxError: /Users/shaunyap/Documents/chatq/components/BetaForm.js: Unexpected token (5:13)\n\n  3 | import axios from'axios';\n  4 | import Router from 'next/router';\n> 5 | import config.viralLoopAPI from '../config';\n    |              ^\n  6 | \n  7 | CONST API_TOKEN = config.viralLoopAPI;\n  8 | \n    at _class.raise (/Users/shaunyap/Documents/chatq/node_modules/babylon/lib/index.js:778:15)\n    at _class.unexpected (/Users/shaunyap/Documents/chatq/node_modules/babylon/lib/index.js:2063:16)\n    at _class.expectContextual (/Users/shaunyap/Documents/chatq/node_modules/babylon/lib/index.js:2031:41)\n    at _class.parseImport (/Users/shaunyap/Documents/chatq/node_modules/babylon/lib/index.js:5151:12)\n    at _class.parseStatementContent (/Users/shaunyap/Documents/chatq/node_modules/babylon/lib/index.js:4007:27)\n    at _class.parseStatement (/Users/shaunyap/Documents/chatq/node_modules/babylon/lib/index.js:3926:17)\n    at _class.parseBlockOrModuleBlockBody (/Users/shaunyap/Documents/chatq/node_modules/babylon/lib/index.js:4470:23)\n    at _class.parseBlockBody (/Users/shaunyap/Documents/chatq/node_modules/babylon/lib/index.js:4457:10)\n    at _class.parseTopLevel (/Users/shaunyap/Documents/chatq/node_modules/babylon/lib/index.js:3902:10)\n    at _class.parse (/Users/shaunyap/Documents/chatq/node_modules/babylon/lib/index.js:5250:17)\n    at parse (/Users/shaunyap/Documents/chatq/node_modules/babylon/lib/index.js:9972:38)\n    at parser (/Users/shaunyap/Documents/chatq/node_modules/@babel/core/lib/transformation/normalize-file.js:106:33)\n    at normalizeFile (/Users/shaunyap/Documents/chatq/node_modules/@babel/core/lib/transformation/normalize-file.js:53:11)\n    at runSync (/Users/shaunyap/Documents/chatq/node_modules/@babel/core/lib/transformation/index.js:34:41)\n    at runAsync (/Users/shaunyap/Documents/chatq/node_modules/@babel/core/lib/transformation/index.js:25:14)\n    at /Users/shaunyap/Documents/chatq/node_modules/@babel/core/lib/transform.js:32:34");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__("axios");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router__ = __webpack_require__("next/router");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_router__);
+var _jsxFileName = "/Users/shaunyap/Documents/chatq/components/BetaForm.js";
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+
+
+
+
+
+var BetaForm =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(BetaForm, _Component);
+
+  function BetaForm() {
+    var _ref;
+
+    var _temp, _this;
+
+    _classCallCheck(this, BetaForm);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_ref = BetaForm.__proto__ || Object.getPrototypeOf(BetaForm)).call.apply(_ref, [this].concat(args))), Object.defineProperty(_assertThisInitialized(_this), "state", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: {
+        fname: '',
+        email: '',
+        loading: false
+      }
+    }), Object.defineProperty(_assertThisInitialized(_this), "onSubmit", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: function value(event) {
+        event.preventDefault();
+
+        _this.setState({
+          loading: true
+        });
+
+        var header = {
+          headers: {
+            "Content-Type": "application/json"
+          }
+        };
+        var user = {
+          "params": {
+            "event": "registration",
+            "user": {
+              "firstname": _this.state.fname,
+              "email": _this.state.email
+            },
+            "referrer": {
+              "referralCode": "",
+              "email": ""
+            },
+            "refSource": ""
+          },
+          "apiToken": _this.props.api
+        };
+        __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post("https://app.viral-loops.com/api/v2/events", user, header).then(function (res) {
+          console.log(res);
+          console.log(res.data);
+
+          _this.setState({
+            loading: false
+          });
+
+          __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.push({
+            pathname: '/ThankYou',
+            query: {
+              referralCode: res.data.referralCode
+            }
+          });
+        });
+      }
+    }), _temp));
+  }
+
+  _createClass(BetaForm, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"], {
+        onSubmit: this.onSubmit,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Group, {
+        widths: "equal",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Input, {
+        fluid: true,
+        placeholder: "First name",
+        value: this.state.fname,
+        onChange: function onChange(event) {
+          return _this2.setState({
+            fname: event.target.value
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Input, {
+        fluid: true,
+        placeholder: "Email",
+        value: this.state.email,
+        onChange: function onChange(event) {
+          return _this2.setState({
+            email: event.target.value
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Button, {
+        color: "orange",
+        loading: this.state.loading,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61
+        }
+      }, "Invite me!")));
+    }
+  }]);
+
+  return BetaForm;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (BetaForm);
 
 /***/ }),
 
@@ -324,7 +485,6 @@ throw new Error("Module build failed: SyntaxError: /Users/shaunyap/Documents/cha
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_BetaForm__ = __webpack_require__("./components/BetaForm.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_BetaForm___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_BetaForm__);
 var _jsxFileName = "/Users/shaunyap/Documents/chatq/components/BetaInvite.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -385,7 +545,7 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 12
         }
-      }, "Get your beta invite now!"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_BetaForm__["default"], {
+      }, "Get your beta invite now!"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_BetaForm__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 13
@@ -469,7 +629,6 @@ var _jsxFileName = "/Users/shaunyap/Documents/chatq/components/Header.js";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__BetaForm__ = __webpack_require__("./components/BetaForm.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__BetaForm___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__BetaForm__);
 var _jsxFileName = "/Users/shaunyap/Documents/chatq/components/Hero.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -562,7 +721,8 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 18
         }
-      }, "1000 more Qredits for every successful friend referral.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__BetaForm__["default"], {
+      }, "1000 more Qredits for every successful friend referral.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__BetaForm__["a" /* default */], {
+        api: this.props.api,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20
@@ -972,6 +1132,16 @@ function (_Component) {
 
 /***/ }),
 
+/***/ "./config.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ({
+  viralLoopAPI: 'Q-hkjofB2TXG0gQDRfW74bwaX6Y'
+});
+
+/***/ }),
+
 /***/ "./pages/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -988,6 +1158,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_MediaFeatures__ = __webpack_require__("./components/MediaFeatures.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_semantic_ui_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__config__ = __webpack_require__("./config.js");
 var _jsxFileName = "/Users/shaunyap/Documents/chatq/pages/index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -1014,6 +1185,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
+var API_TOKEN = __WEBPACK_IMPORTED_MODULE_9__config__["a" /* default */].viralLoopAPI;
+
 var Prelaunch =
 /*#__PURE__*/
 function (_Component) {
@@ -1031,46 +1204,47 @@ function (_Component) {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_Layout__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 17
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Hero__["a" /* default */], {
+        api: API_TOKEN,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 18
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_AnnouncementBar__["a" /* default */], {
         number: "15",
         text: "days until launch!",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 19
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__components_MediaFeatures__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 20
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Benefits__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 21
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_AnnouncementBar__["a" /* default */], {
         number: "2,037",
         text: "traders are in the beta!",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 22
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_QreditPromo__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 23
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__components_BetaInvite__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 24
         }
       }));
     }
@@ -1091,10 +1265,24 @@ module.exports = __webpack_require__("./pages/index.js");
 
 /***/ }),
 
+/***/ "axios":
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
+
+/***/ }),
+
 /***/ "next/head":
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "next/router":
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
 
 /***/ }),
 

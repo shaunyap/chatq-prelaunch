@@ -7,12 +7,15 @@ import QreditPromo from '../components/QreditPromo';
 import BetaInvite from '../components/BetaInvite';
 import MediaFeatures from '../components/MediaFeatures';
 import { Container, Grid, Form } from 'semantic-ui-react';
+import config from '../config';
+
+const API_TOKEN = config.viralLoopAPI;
 
 class Prelaunch extends Component {
   render() {
     return (
       <Layout>
-        <Hero />
+        <Hero api={API_TOKEN}/>
         <AnnouncementBar number="15" text="days until launch!" />
         <MediaFeatures />
         <Benefits />
