@@ -1,0 +1,38 @@
+// Settings
+$secondary-color: #393F50;
+$white: #EAEAEA;
+
+// Flexbox
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+
+// Typography
+.text-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+// Hero component
+.hero {
+  margin: 5rem 0;
+}
+
+
+// Announcement Bar components
+.announcement-bar {
+  background-color: #393F50;
+  padding: 2rem 0;
+  color: $white;
+}
+
+// Media Feature components
+.media-feature {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}

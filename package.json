@@ -4,13 +4,15 @@
   "description": "Chat Q Pre-launch Webapp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "author": "Shaun Yap",
   "license": "ISC",
   "dependencies": {
-    "next": "^6.0.3",
-    "next-routes": "^1.4.2",
+    "axios": "^0.18.0",
+    "next": "6.0.3",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "semantic-ui-css": "^2.3.1",
