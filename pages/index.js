@@ -9,13 +9,11 @@ import MediaFeatures from '../components/MediaFeatures';
 import { Container, Grid, Form } from 'semantic-ui-react';
 import config from '../config';
 
-const API_TOKEN = config.viralLoopAPI;
-
 class Prelaunch extends Component {
   render() {
     return (
       <Layout>
-        <Hero api={API_TOKEN}/>
+        <Hero config={config}/>
         <AnnouncementBar number="15" text="days until launch!" />
         <MediaFeatures />
         <Benefits />

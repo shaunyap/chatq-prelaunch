@@ -339,6 +339,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 
 
+var referralCode;
 
 var BetaForm =
 /*#__PURE__*/
@@ -376,17 +377,18 @@ function (_Component) {
           loading: true
         });
 
-        var header = {
+        var vl_header = {
           headers: {
             "Content-Type": "application/json"
           }
         };
-        var user = {
+        var vl_user = {
           "params": {
             "event": "registration",
             "user": {
               "firstname": _this.state.fname,
-              "email": _this.state.email
+              "email": _this.state.email,
+              "lanuage": "EN"
             },
             "referrer": {
               "referralCode": "",
@@ -394,12 +396,32 @@ function (_Component) {
             },
             "refSource": ""
           },
-          "apiToken": _this.props.api
+          "apiToken": _this.props.config.viralLoopAPI
         };
-        __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post("https://app.viral-loops.com/api/v2/events", user, header).then(function (res) {
-          console.log(res);
-          console.log(res.data);
-
+        __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post("https://app.viral-loops.com/api/v2/events", vl_user, vl_header).then(function (res) {
+          referralCode = res.data.referralCode;
+        }).then(function () {
+          var mc_header = {
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: "apikey: ".concat(_this.props.config.mailchimp_api)
+            }
+          };
+          var mc_body = {
+            "email_address": _this.state.email,
+            "status": "subscribed",
+            "merge_fields": {
+              "FNAME": _this.state.fname,
+              "LANGUAGE": "EN",
+              "RCODE": referralCode
+            }
+          };
+          __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post(_this.props.config.mailchimp_members_endpoint, mc_body, mc_header).then(function (response) {
+            console.log(response);
+          }).catch(function (error) {
+            console.log(error);
+          });
+        }).then(function (res) {
           _this.setState({
             loading: false
           });
@@ -407,7 +429,7 @@ function (_Component) {
           __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.push({
             pathname: '/ThankYou',
             query: {
-              referralCode: res.data.referralCode
+              referralCode: referralCode
             }
           });
         });
@@ -424,13 +446,13 @@ function (_Component) {
         onSubmit: this.onSubmit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 74
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Group, {
         widths: "equal",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 75
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Input, {
         fluid: true,
@@ -443,7 +465,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 76
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Input, {
         fluid: true,
@@ -456,14 +478,14 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 81
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Button, {
         color: "orange",
         loading: this.state.loading,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 86
         }
       }, "Invite me!")));
     }
@@ -722,7 +744,7 @@ function (_Component) {
           lineNumber: 18
         }
       }, "1000 more Qredits for every successful friend referral.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__BetaForm__["a" /* default */], {
-        api: this.props.api,
+        config: this.props.config,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20
@@ -1137,7 +1159,10 @@ function (_Component) {
 
 "use strict";
 /* harmony default export */ __webpack_exports__["a"] = ({
-  viralLoopAPI: 'Q-hkjofB2TXG0gQDRfW74bwaX6Y'
+  viralLoopAPI: 'Q-hkjofB2TXG0gQDRfW74bwaX6Y',
+  mailchimp_members_endpoint: 'https://us17.api.mailchimp.com/3.0/lists/8121b9cd3a/members',
+  mailchimp_list_id: '8121b9cd3a',
+  mailchimp_api: "1909b3ee1e81d033727336e21e11b82f-us17"
 });
 
 /***/ }),
@@ -1185,7 +1210,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var API_TOKEN = __WEBPACK_IMPORTED_MODULE_9__config__["a" /* default */].viralLoopAPI;
 
 var Prelaunch =
 /*#__PURE__*/
@@ -1204,47 +1228,47 @@ function (_Component) {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_Layout__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 15
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Hero__["a" /* default */], {
-        api: API_TOKEN,
+        config: __WEBPACK_IMPORTED_MODULE_9__config__["a" /* default */],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 16
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_AnnouncementBar__["a" /* default */], {
         number: "15",
         text: "days until launch!",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 17
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__components_MediaFeatures__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 18
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Benefits__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 19
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_AnnouncementBar__["a" /* default */], {
         number: "2,037",
         text: "traders are in the beta!",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 20
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_QreditPromo__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 21
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__components_BetaInvite__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 22
         }
       }));
     }

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Form } from 'semantic-ui-react';
-import axios from'axios';
+import axios from 'axios';
 import Router from 'next/router';
+let referralCode;
 
 class BetaForm extends Component {
   state = {
@@ -14,14 +15,14 @@ class BetaForm extends Component {
     event.preventDefault();
     this.setState({loading: true});
 
-    const header = {headers: { "Content-Type": "application/json" }};
-
-    const user = {
+    const vl_header = {headers: { "Content-Type": "application/json" }};
+    const vl_user = {
       "params": {
         "event": "registration",
         "user": {
             "firstname": this.state.fname,
-            "email": this.state.email
+            "email": this.state.email,
+            "lanuage": "EN"
         },
         "referrer": {
             "referralCode": "",
@@ -29,19 +30,43 @@ class BetaForm extends Component {
         },
         "refSource": ""
     },
-    "apiToken": this.props.api
+    "apiToken": this.props.config.viralLoopAPI
     }
 
-    axios.post(`https://app.viral-loops.com/api/v2/events`, user, header)
+    axios.post(`https://app.viral-loops.com/api/v2/events`, vl_user, vl_header)
     .then(res => {
-      console.log(res);
-      console.log(res.data);
+      referralCode = res.data.referralCode;
+    })
+    .then(() =>  {
+      const mc_header = {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `apikey: ${this.props.config.mailchimp_api}`
+        }};
+      const mc_body = {
+             "email_address": this.state.email,
+             "status": "subscribed",
+              "merge_fields": {
+                    "FNAME": this.state.fname,
+                    "LANGUAGE": "EN",
+                    "RCODE": referralCode
+              }
+      }
+      axios.post(this.props.config.mailchimp_members_endpoint, mc_body, mc_header)
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+    })
+    .then((res) => {
       this.setState({loading: false});
       Router.push({
         pathname: '/ThankYou',
-        query: { referralCode: res.data.referralCode }
+        query: { referralCode: referralCode }
       })
-    });
+    })
   };
 
   render (){
