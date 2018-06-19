@@ -33,40 +33,19 @@ class BetaForm extends Component {
     "apiToken": this.props.config.viralLoopAPI
     }
 
+
     axios.post(`https://app.viral-loops.com/api/v2/events`, vl_user, vl_header)
     .then(res => {
       referralCode = res.data.referralCode;
+
     })
     .then(() =>  {
-      const mc_header = {
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `apikey: ${this.props.config.mailchimp_api}`
-        }};
-      const mc_body = {
-             "email_address": this.state.email,
-             "status": "subscribed",
-              "merge_fields": {
-                    "FNAME": this.state.fname,
-                    "LANGUAGE": "EN",
-                    "RCODE": referralCode
-              }
-      }
-      axios.post(this.props.config.mailchimp_members_endpoint, mc_body, mc_header)
-          .then(function (response) {
-            console.log(response);
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-    })
-    .then((res) => {
       this.setState({loading: false});
       Router.push({
         pathname: '/ThankYou',
         query: { referralCode: referralCode }
       })
-    })
+    });
   };
 
   render (){

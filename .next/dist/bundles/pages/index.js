@@ -401,27 +401,6 @@ function (_Component) {
         __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post("https://app.viral-loops.com/api/v2/events", vl_user, vl_header).then(function (res) {
           referralCode = res.data.referralCode;
         }).then(function () {
-          var mc_header = {
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: "apikey: ".concat(_this.props.config.mailchimp_api)
-            }
-          };
-          var mc_body = {
-            "email_address": _this.state.email,
-            "status": "subscribed",
-            "merge_fields": {
-              "FNAME": _this.state.fname,
-              "LANGUAGE": "EN",
-              "RCODE": referralCode
-            }
-          };
-          __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post(_this.props.config.mailchimp_members_endpoint, mc_body, mc_header).then(function (response) {
-            console.log(response);
-          }).catch(function (error) {
-            console.log(error);
-          });
-        }).then(function (res) {
           _this.setState({
             loading: false
           });
@@ -446,13 +425,13 @@ function (_Component) {
         onSubmit: this.onSubmit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 53
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Group, {
         widths: "equal",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 54
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Input, {
         fluid: true,
@@ -465,7 +444,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 55
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Input, {
         fluid: true,
@@ -478,14 +457,14 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 60
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Button, {
         color: "orange",
         loading: this.state.loading,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 65
         }
       }, "Invite me!")));
     }
@@ -1160,7 +1139,7 @@ function (_Component) {
 "use strict";
 /* harmony default export */ __webpack_exports__["a"] = ({
   viralLoopAPI: 'Q-hkjofB2TXG0gQDRfW74bwaX6Y',
-  mailchimp_members_endpoint: 'https://us17.api.mailchimp.com/3.0/lists/8121b9cd3a/members',
+  mailchimp_members_endpoint: 'https://us17.api.mailchimp.com/3.0/lists/',
   mailchimp_list_id: '8121b9cd3a',
   mailchimp_api: "1909b3ee1e81d033727336e21e11b82f-us17"
 });
