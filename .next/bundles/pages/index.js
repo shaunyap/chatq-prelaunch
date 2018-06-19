@@ -50,17 +50,17 @@ function (_Component) {
   _createClass(AnnouncementBar, [{
     key: "render",
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */], {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 7
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Row, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 8
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 9
@@ -138,22 +138,22 @@ var _jsxFileName = "/Users/shaunyap/Documents/chatq/components/Benefits.js";
 
 
 var _default = function _default() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["b" /* Container */], {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["c" /* Container */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Row, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Row, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -168,19 +168,19 @@ var _default = function _default() {
       fileName: _jsxFileName,
       lineNumber: 11
     }
-  }, "Why ChatQ?"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */], {
+  }, "Why ChatQ?"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */], {
     stackable: true,
     columns: 4,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Row, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Row, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -191,7 +191,7 @@ var _default = function _default() {
       fileName: _jsxFileName,
       lineNumber: 16
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Image */], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Image */], {
     src: "/static/icon_code_2.svg",
     __source: {
       fileName: _jsxFileName,
@@ -203,7 +203,7 @@ var _default = function _default() {
       fileName: _jsxFileName,
       lineNumber: 19
     }
-  }, "Find inspiration for trades with our expert opinions and analyses")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+  }, "Find inspiration for trades with our expert opinions and analyses")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
@@ -214,7 +214,7 @@ var _default = function _default() {
       fileName: _jsxFileName,
       lineNumber: 23
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Image */], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Image */], {
     src: "/static/icon_code_2.svg",
     __source: {
       fileName: _jsxFileName,
@@ -226,7 +226,7 @@ var _default = function _default() {
       fileName: _jsxFileName,
       lineNumber: 26
     }
-  }, "Harness the community's intelligence with aggregated market sentiment")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+  }, "Harness the community's intelligence with aggregated market sentiment")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
@@ -237,7 +237,7 @@ var _default = function _default() {
       fileName: _jsxFileName,
       lineNumber: 30
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Image */], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Image */], {
     src: "/static/icon_code_2.svg",
     __source: {
       fileName: _jsxFileName,
@@ -249,7 +249,7 @@ var _default = function _default() {
       fileName: _jsxFileName,
       lineNumber: 33
     }
-  }, "Boost your investing skills with tools like bots and tournaments")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+  }, "Boost your investing skills with tools like bots and tournaments")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 36
@@ -260,7 +260,7 @@ var _default = function _default() {
       fileName: _jsxFileName,
       lineNumber: 37
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Image */], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Image */], {
     src: "/static/icon_code_2.svg",
     __source: {
       fileName: _jsxFileName,
@@ -415,19 +415,13 @@ function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["c" /* Form */], {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Form */], {
         onSubmit: this.onSubmit,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 53
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["c" /* Form */].Group, {
-        widths: "equal",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["c" /* Form */].Input, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Form */].Input, {
         fluid: true,
         placeholder: "First name",
         value: this.state.fname,
@@ -438,9 +432,9 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 54
         }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["c" /* Form */].Input, {
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Form */].Input, {
         fluid: true,
         placeholder: "Email",
         value: this.state.email,
@@ -451,16 +445,16 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 59
         }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["c" /* Form */].Button, {
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Form */].Button, {
         color: "orange",
         loading: this.state.loading,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 64
         }
-      }, "Invite me!")));
+      }, "Invite me!"));
     }
   }, {
     key: "__reactstandin__regenerateByEval",
@@ -546,17 +540,17 @@ function (_Component) {
   _createClass(BetaInvite, [{
     key: "render",
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */], {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 8
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Row, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 9
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 10
@@ -633,23 +627,23 @@ var _jsxFileName = "/Users/shaunyap/Documents/chatq/components/Header.js";
 
 
 var _default = function _default() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["b" /* Container */], {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["c" /* Container */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Menu */], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["g" /* Menu */], {
     secondary: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Menu */].Item, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["g" /* Menu */].Item, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Image */], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Image */], {
     src: "http://www.chatq.sg/static/assets/images/chatq-logo-desktop.be8da9905007.svg",
     size: "small",
     wrapped: true,
@@ -657,13 +651,13 @@ var _default = function _default() {
       fileName: _jsxFileName,
       lineNumber: 9
     }
-  })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Menu */].Menu, {
+  })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["g" /* Menu */].Menu, {
     position: "right",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Menu */].Item, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["g" /* Menu */].Item, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -707,6 +701,7 @@ var _default = function _default() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__BetaForm__ = __webpack_require__("./components/BetaForm.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__AnnouncementBar__ = __webpack_require__("./components/AnnouncementBar.js");
 var _jsxFileName = "/Users/shaunyap/Documents/chatq/components/Hero.js";
 
 (function () {
@@ -733,6 +728,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
+
 var Hero =
 /*#__PURE__*/
 function (_Component) {
@@ -747,77 +743,122 @@ function (_Component) {
   _createClass(Hero, [{
     key: "render",
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["b" /* Container */], {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["c" /* Container */], {
         className: "hero",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 8
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 9
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Row, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 10
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
-        mobile: 16,
-        computer: 10,
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 11
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 12
         }
-      }, "Be The First In The Q!"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h3", {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
+        className: "text-center",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 13
         }
-      }, "ChatQ is opening its beta to its first 10,000 users."), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+      }, "The social chat app for retail investors"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h3", {
+        className: "text-center",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 14
         }
-      }, "Request a beta invite and get:"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        }
-      }, "1000 Qredits to use in the app"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+      }, "Powered by smart bots and market sentiment."))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17
         }
-      }, "First In The Q Profile Badge"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
+        mobile: 16,
+        computer: 8,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 18
         }
-      }, "1000 more Qredits for every successful friend referral.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__BetaForm__["a" /* default */], {
-        config: this.props.config,
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        }
+      }, "Be The First In The Q!"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20
         }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
-        width: 6,
+      }, "Join our beta waitlist. 1,000 users only."), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        }
+      }, "Request a beta invite and get:"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 22
         }
-      }))));
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        }
+      }, "1 free month of premium access to the ChatQ app"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        }
+      }, "First In The Q Profile Badge"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        }
+      }, "1 more free month for every successful referral"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
+        mobile: 16,
+        computer: 8,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["b" /* Card */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["b" /* Card */].Content, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", {
+        className: "text-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        }
+      }, "Request an invite now"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__BetaForm__["a" /* default */], {
+        config: this.props.config,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h3", {
+        className: "text-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        }
+      }, "15 days to launch!")))))));
     }
   }, {
     key: "__reactstandin__regenerateByEval",
@@ -999,23 +1040,23 @@ function (_Component) {
   _createClass(MediaFeatures, [{
     key: "render",
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["b" /* Container */], {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["c" /* Container */], {
         className: "media-feature",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 7
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 8
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Row, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 9
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 10
@@ -1026,29 +1067,29 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 11
         }
-      }, "As Featured In"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Row, {
+      }, "As Featured In"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 14
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 15
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */], {
         stackable: true,
         columns: 4,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 16
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Row, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 18
@@ -1059,13 +1100,13 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 19
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Image */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Image */], {
         src: "http://via.placeholder.com/150x100",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20
         }
-      }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+      }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 23
@@ -1076,13 +1117,13 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 24
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Image */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Image */], {
         src: "http://via.placeholder.com/150x100",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25
         }
-      }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+      }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 28
@@ -1093,13 +1134,13 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 29
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Image */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Image */], {
         src: "http://via.placeholder.com/150x100",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30
         }
-      }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+      }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 33
@@ -1110,7 +1151,7 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 34
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Image */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Image */], {
         src: "http://via.placeholder.com/150x100",
         __source: {
           fileName: _jsxFileName,
@@ -1199,22 +1240,22 @@ function (_Component) {
   _createClass(QreditPromo, [{
     key: "render",
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["b" /* Container */], {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["c" /* Container */], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 7
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 8
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Row, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 9
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 10
@@ -1241,30 +1282,30 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 13
         }
-      }, " and 1000 more with every friend you refer!"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */], {
+      }, " and 1000 more with every friend you refer!"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */], {
         stackable: true,
         columns: 2,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 14
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Row, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 15
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 16
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Image */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Image */], {
         src: "http://via.placeholder.com/450x350",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17
         }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Grid */].Column, {
+      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Grid */].Column, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19
@@ -27047,7 +27088,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__collections_Breadcrumb_BreadcrumbSection__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/BreadcrumbSection.js");
 /* unused harmony reexport BreadcrumbSection */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__collections_Form__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Form/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_15__collections_Form__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_15__collections_Form__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__collections_Form_FormButton__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Form/FormButton.js");
 /* unused harmony reexport FormButton */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__collections_Form_FormCheckbox__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Form/FormCheckbox.js");
@@ -27067,13 +27108,13 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__collections_Form_FormTextArea__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Form/FormTextArea.js");
 /* unused harmony reexport FormTextArea */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__collections_Grid__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Grid/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_25__collections_Grid__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_25__collections_Grid__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__collections_Grid_GridColumn__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Grid/GridColumn.js");
 /* unused harmony reexport GridColumn */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__collections_Grid_GridRow__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Grid/GridRow.js");
 /* unused harmony reexport GridRow */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__collections_Menu__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_28__collections_Menu__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_28__collections_Menu__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__collections_Menu_MenuHeader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuHeader.js");
 /* unused harmony reexport MenuHeader */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__collections_Menu_MenuItem__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuItem.js");
@@ -27113,7 +27154,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__elements_Button_ButtonOr__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Button/ButtonOr.js");
 /* unused harmony reexport ButtonOr */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__elements_Container__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Container/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_48__elements_Container__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_48__elements_Container__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__elements_Divider__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Divider/index.js");
 /* unused harmony reexport Divider */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__elements_Flag__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Flag/index.js");
@@ -27129,7 +27170,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__elements_Icon_IconGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Icon/IconGroup.js");
 /* unused harmony reexport IconGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__elements_Image__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Image/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_56__elements_Image__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_56__elements_Image__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__elements_Image_ImageGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Image/ImageGroup.js");
 /* unused harmony reexport ImageGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__elements_Input__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Input/index.js");
@@ -27255,7 +27296,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_118__views_Advertisement__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Advertisement/index.js");
 /* unused harmony reexport Advertisement */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_119__views_Card_Card__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Card/Card.js");
-/* unused harmony reexport Card */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_119__views_Card_Card__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_120__views_Card_CardContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Card/CardContent.js");
 /* unused harmony reexport CardContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_121__views_Card_CardDescription__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Card/CardDescription.js");
@@ -42492,8 +42533,8 @@ function (_Component) {
           lineNumber: 16
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_AnnouncementBar__["a" /* default */], {
-        number: "15",
-        text: "days until launch!",
+        number: "2,037",
+        text: "traders are on the beta waitlist!",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17
@@ -42508,22 +42549,15 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 19
         }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_AnnouncementBar__["a" /* default */], {
-        number: "2,037",
-        text: "traders are in the beta!",
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_QreditPromo__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20
         }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_QreditPromo__["a" /* default */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__components_BetaInvite__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 21
         }
       }));
     }

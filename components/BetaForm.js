@@ -51,7 +51,6 @@ class BetaForm extends Component {
   render (){
     return (
       <Form onSubmit={this.onSubmit}>
-        <Form.Group widths="equal">
           <Form.Input fluid
             placeholder='First name'
             value={this.state.fname}
@@ -63,7 +62,6 @@ class BetaForm extends Component {
             onChange={event => this.setState({email: event.target.value})}
            />
           <Form.Button color='orange' loading={this.state.loading}>Invite me!</Form.Button>
-        </Form.Group>
       </Form>
   )}
 }

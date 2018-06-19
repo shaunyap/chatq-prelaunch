@@ -427,12 +427,6 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 53
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Group, {
-        widths: "equal",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Input, {
         fluid: true,
         placeholder: "First name",
@@ -444,7 +438,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 54
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Input, {
         fluid: true,
@@ -457,16 +451,16 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 59
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Button, {
         color: "orange",
         loading: this.state.loading,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 64
         }
-      }, "Invite me!")));
+      }, "Invite me!"));
     }
   }]);
 
@@ -630,6 +624,7 @@ var _jsxFileName = "/Users/shaunyap/Documents/chatq/components/Header.js";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__BetaForm__ = __webpack_require__("./components/BetaForm.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__AnnouncementBar__ = __webpack_require__("./components/AnnouncementBar.js");
 var _jsxFileName = "/Users/shaunyap/Documents/chatq/components/Hero.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -645,6 +640,7 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -668,73 +664,118 @@ function (_Component) {
         className: "hero",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 9
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Grid"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 10
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Grid"].Row, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Grid"].Column, {
-        mobile: 16,
-        computer: 10,
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 11
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Grid"].Column, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 12
         }
-      }, "Be The First In The Q!"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h3", {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
+        className: "text-center",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 13
         }
-      }, "ChatQ is opening its beta to its first 10,000 users."), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+      }, "The social chat app for retail investors"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h3", {
+        className: "text-center",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 14
         }
-      }, "Request a beta invite and get:"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        }
-      }, "1000 Qredits to use in the app"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+      }, "Powered by smart bots and market sentiment."))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Grid"].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17
         }
-      }, "First In The Q Profile Badge"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Grid"].Column, {
+        mobile: 16,
+        computer: 8,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 18
         }
-      }, "1000 more Qredits for every successful friend referral.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__BetaForm__["a" /* default */], {
-        config: this.props.config,
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        }
+      }, "Be The First In The Q!"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20
         }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Grid"].Column, {
-        width: 6,
+      }, "Join our beta waitlist. 1,000 users only."), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        }
+      }, "Request a beta invite and get:"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 22
         }
-      }))));
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        }
+      }, "1 free month of premium access to the ChatQ app"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        }
+      }, "First In The Q Profile Badge"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        }
+      }, "1 more free month for every successful referral"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Grid"].Column, {
+        mobile: 16,
+        computer: 8,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Card"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Card"].Content, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", {
+        className: "text-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        }
+      }, "Request an invite now"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__BetaForm__["a" /* default */], {
+        config: this.props.config,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h3", {
+        className: "text-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        }
+      }, "15 days to launch!")))))));
     }
   }]);
 
@@ -1216,8 +1257,8 @@ function (_Component) {
           lineNumber: 16
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_AnnouncementBar__["a" /* default */], {
-        number: "15",
-        text: "days until launch!",
+        number: "2,037",
+        text: "traders are on the beta waitlist!",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17
@@ -1232,22 +1273,15 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 19
         }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_AnnouncementBar__["a" /* default */], {
-        number: "2,037",
-        text: "traders are in the beta!",
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_QreditPromo__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20
         }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_QreditPromo__["a" /* default */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__components_BetaInvite__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 21
         }
       }));
     }

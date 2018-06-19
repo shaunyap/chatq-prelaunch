@@ -14,10 +14,9 @@ class Prelaunch extends Component {
     return (
       <Layout>
         <Hero config={config}/>
-        <AnnouncementBar number="15" text="days until launch!" />
+        <AnnouncementBar number="2,037" text="traders are on the beta waitlist!" />
         <MediaFeatures />
         <Benefits />
-        <AnnouncementBar number="2,037" text="traders are in the beta!" />
         <QreditPromo />
         <BetaInvite />
       </Layout>
