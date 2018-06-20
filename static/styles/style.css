@@ -3,11 +3,66 @@
   justify-content: center;
 }
 
+.flex-middle {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+section {
+  margin-top: 5rem;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2.8em;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
 .text-center {
   text-align: center;
 }
 
+.text-primary {
+  color: #E35E2A;
+}
+
 .bold {
+  font-weight: 600;
+}
+
+.text-lr-margin {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.ui .button {
+  border-radius: 12%/50%;
+  padding: 1rem 5rem;
+  text-transform: uppercase;
+}
+
+.ui.button.button--primary-gradient {
+  background-image: linear-gradient(135deg, #fa8d0c 0%, #f45405 100%);
+  color: #FFF;
   font-weight: 600;
 }
 
@@ -15,15 +70,42 @@
   margin: 5rem 0;
 }
 
-.announcement-bar {
-  background-color: #393F50;
-  padding: 2rem 0;
-  color: #EAEAEA;
+.hero--form {
+  padding: 3rem 0;
 }
 
-.media-feature {
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial--copy {
+  font-size: 1.4em;
+}
+
+.benefits .row {
   margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
+}
+
+.announcement-bar {
+  padding: 2rem 0;
+}
+
+.ui .card {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .ui .card {
+    padding: 2rem;
+  }
+}
+
+.ui .card .form {
+  margin: 0 2rem;
+}
+
+.ui.card.card--elevate3 {
+  box-shadow: 5px 12px 26px rgba(0, 0, 0, 0.3), 0 10px 12px rgba(0, 0, 0, 0.22);
 }
 
 /*# sourceMappingURL=style.css.map */

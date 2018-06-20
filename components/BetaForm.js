@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form } from 'semantic-ui-react';
+import { Form, Button } from 'semantic-ui-react';
 import axios from 'axios';
 import Router from 'next/router';
 let referralCode;
@@ -50,7 +50,7 @@ class BetaForm extends Component {
 
   render (){
     return (
-      <Form onSubmit={this.onSubmit}>
+      <Form className="hero--form" onSubmit={this.onSubmit}>
           <Form.Input fluid
             placeholder='First name'
             value={this.state.fname}
@@ -61,7 +61,9 @@ class BetaForm extends Component {
             value={this.state.email}
             onChange={event => this.setState({email: event.target.value})}
            />
-          <Form.Button color='orange' loading={this.state.loading}>Invite me!</Form.Button>
+           <div className="flex-center">
+            <Button className="button--primary-gradient" loading={this.state.loading}>Invite me!</Button>
+           </div>
       </Form>
   )}
 }

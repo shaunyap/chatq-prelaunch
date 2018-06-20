@@ -8,7 +8,7 @@ class AnnouncementBar extends Component {
         <Grid.Row>
           <Grid.Column>
             <div className="announcement-bar">
-              <p className="text-center"><span>{this.props.number}</span> {this.props.text}</p>
+              <h4 className="text-center"><span>{this.props.number}</span> {this.props.text}</h4>
             </div>
             </Grid.Column>
           </Grid.Row>

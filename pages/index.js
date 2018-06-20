@@ -5,7 +5,8 @@ import Benefits from '../components/Benefits';
 import AnnouncementBar from '../components/AnnouncementBar';
 import QreditPromo from '../components/QreditPromo';
 import BetaInvite from '../components/BetaInvite';
-import MediaFeatures from '../components/MediaFeatures';
+import Explainer from '../components/Explainer';
+import Testimonial from '../components/Testimonial';
 import { Container, Grid, Form } from 'semantic-ui-react';
 import config from '../config';
 
@@ -15,10 +16,9 @@ class Prelaunch extends Component {
       <Layout>
         <Hero config={config}/>
         <AnnouncementBar number="2,037" text="traders are on the beta waitlist!" />
-        <MediaFeatures />
+        <Explainer />
+        <Testimonial />
         <Benefits />
-        <QreditPromo />
-        <BetaInvite />
       </Layout>
     )
   }
