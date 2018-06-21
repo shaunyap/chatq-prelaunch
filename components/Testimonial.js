@@ -4,7 +4,7 @@ import { Grid } from 'semantic-ui-react';
 class Testimonial extends Component {
   render (){
     return (
-      <section className="testimonial">
+      <section className="testimonial section__bmargin">
       <Grid centered columns={3}>
       <Grid.Column>
         <p className="text-center testimonial--copy">"ChatQ&apos;s tournaments feature has really helped me home my trading instrincts"</p>

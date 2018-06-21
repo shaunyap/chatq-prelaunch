@@ -5,9 +5,13 @@ import Benefits from '../components/Benefits';
 import AnnouncementBar from '../components/AnnouncementBar';
 import QreditPromo from '../components/QreditPromo';
 import BetaInvite from '../components/BetaInvite';
+import FooterForm from '../components/FooterForm';
 import Explainer from '../components/Explainer';
 import Testimonial from '../components/Testimonial';
-import { Container, Grid, Form } from 'semantic-ui-react';
+import Referral from '../components/Referral';
+import ProductTable from '../components/ProductTable';
+import Remember from '../components/Remember';
+import { Container, Grid } from 'semantic-ui-react';
 import config from '../config';
 
 class Prelaunch extends Component {
@@ -19,6 +23,10 @@ class Prelaunch extends Component {
         <Explainer />
         <Testimonial />
         <Benefits />
+        <Referral />
+        <ProductTable />
+        <FooterForm />
+        <Remember />
       </Layout>
     )
   }

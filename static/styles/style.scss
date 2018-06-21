@@ -21,6 +21,29 @@ section {
   margin-top: 5rem;
 }
 
+.section__bmargin {
+  margin-bottom: 5rem;
+}
+
+.mobile__fullWidth {
+  @media (max-width:639px) {
+    width: 100% !important;
+  }
+}
+
+footer {
+  padding: 2rem 0;
+  background-color: #3D7DCC;
+  color: $white;
+  a {
+    color: $white
+  }
+
+  a:hover {
+    color: $primary-color;
+  }
+}
+
 
 // Typography
 // ==============================
@@ -93,6 +116,9 @@ p {
 
 // Testimonial component
 // ==============================
+.testimonial {
+  padding: 5rem 0;
+}
 .testimonial p {
   font-style: italic;
 }
@@ -133,4 +159,38 @@ p {
 
 .ui.card.card--elevate3 {
   box-shadow: 5px 12px 26px rgba(0,0,0,0.30), 0 10px 12px rgba(0,0,0,0.22);
+}
+
+// Referral component
+// ==============================
+.ui.grid.referral--grid {
+  margin-top: 3rem;
+
+  .referral--grid--copy {
+    margin-top: 2rem;
+  }
+}
+
+// Product Table component
+// ==============================
+.product-table {
+  .ui.table {
+    max-width: 800px;
+  }
+}
+
+// Remember component
+// ==============================
+.remember {
+  h3 {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    color: #888;
+  }
+
+  p {
+    color: #555;
+  }
 }
