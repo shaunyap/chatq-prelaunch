@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Form, Button } from 'semantic-ui-react';
 import axios from 'axios';
-import Router from 'next/router';
+import {Router} from '../routes'
 let referralCode;
 
 class BetaForm extends Component {
-  // TODO pull referral query, put it into state, and pass it into the vl_user obj 
+  // TODO pull referral query, put it into state, and pass it into the vl_user obj
   state = {
     fname: '',
     email: '',
@@ -34,7 +34,6 @@ class BetaForm extends Component {
     "apiToken": this.props.config.viralLoopAPI
     }
 
-
     axios.post(`https://app.viral-loops.com/api/v2/events`, vl_user, vl_header)
     .then(res => {
       referralCode = res.data.referralCode;
@@ -42,10 +41,7 @@ class BetaForm extends Component {
     })
     .then(() =>  {
       this.setState({loading: false});
-      Router.push({
-        pathname: '/ThankYou',
-        query: { referralCode: referralCode }
-      })
+      Router.pushRoute(`/ThankYou?${referralCode}`)
     });
   };
 

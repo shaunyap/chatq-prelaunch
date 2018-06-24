@@ -24,6 +24,9 @@ class TYHeroGrid extends Component {
           <p>Launching in {days} days. For Apple iOS only.</p>
           <BetaFeatures
             header="Beta user perks:"
+            img_a="../static/img/chaQ-lp-V2-02.png"
+            img_b="../static/img/chaQ-lp-V2-03.png"
+            img_c="../static/img/chaQ-lp-V2-04.png"
             copy_a="1 free month of permium access to the ChatQ app"
             copy_b="A First in the Q profile badge to show you're an early supporter"
             copy_c="1 more free month for every successful referral"

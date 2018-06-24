@@ -18,7 +18,7 @@ class Prelaunch extends Component {
   render() {
     return (
       <Layout>
-        <Hero config={config}/>
+        <Hero/>
         <AnnouncementBar number="2,037" text="traders are on the beta waitlist!" />
         <Explainer />
         <Testimonial />

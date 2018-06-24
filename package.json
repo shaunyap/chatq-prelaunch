@@ -4,7 +4,7 @@
   "description": "Chat Q Pre-launch Webapp",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
     "start": "next start"
   },
@@ -14,6 +14,7 @@
     "axios": "^0.18.0",
     "mailchimp-api-v3": "^1.12.0",
     "next": "6.0.3",
+    "next-routes": "^1.4.2",
     "nuka-carousel": "^4.2.2",
     "react": "^16.4.0",
     "react-copy-to-clipboard": "^5.0.1",

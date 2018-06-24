@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -610,7 +610,7 @@ function (_Component) {
           lineNumber: 11
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-        src: "./static/img/chaQ-lp-V2-02.png",
+        src: this.props.img_a,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 12
@@ -645,7 +645,7 @@ function (_Component) {
           lineNumber: 21
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-        src: "./static/img/chaQ-lp-V2-03.png",
+        src: this.props.img_b,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 22
@@ -680,7 +680,7 @@ function (_Component) {
           lineNumber: 31
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-        src: "./static/img/chaQ-lp-V2-04.png",
+        src: this.props.img_c,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 32
@@ -723,8 +723,8 @@ function (_Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__("axios");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router__ = __webpack_require__("next/router");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_router__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__routes__ = __webpack_require__("./routes.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__routes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__routes__);
 var _jsxFileName = "/Users/shaunyap/Documents/chatq/components/BetaForm.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -811,12 +811,7 @@ function (_Component) {
             loading: false
           });
 
-          __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.push({
-            pathname: '/ThankYou',
-            query: {
-              referralCode: referralCode
-            }
-          });
+          __WEBPACK_IMPORTED_MODULE_3__routes__["Router"].pushRoute("/ThankYou?".concat(referralCode));
         });
       }
     }), _temp));
@@ -831,14 +826,14 @@ function (_Component) {
         className: "flex-center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 50
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"], {
         id: "hero--form",
         onSubmit: this.onSubmit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 51
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Input, {
         fluid: true,
@@ -851,7 +846,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 52
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Form"].Input, {
         fluid: true,
@@ -864,20 +859,20 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 57
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         className: "flex-center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 62
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Button"], {
         className: "button--primary-gradient",
         loading: this.state.loading,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 63
         }
       }, "Invite me!"))));
     }
@@ -1495,6 +1490,7 @@ function (_Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__BetaFeatures__ = __webpack_require__("./components/BetaFeatures.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__BetaForm__ = __webpack_require__("./components/BetaForm.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__days__ = __webpack_require__("./days.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config__ = __webpack_require__("./config.js");
 var _jsxFileName = "/Users/shaunyap/Documents/chatq/components/HeroGrid.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -1510,6 +1506,7 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -1535,97 +1532,100 @@ function (_Component) {
         className: "hero--grid",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 11
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 12
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Grid"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 13
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Grid"].Row, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 14
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Grid"].Column, {
         mobile: 16,
         computer: 8,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 15
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         className: "flex-middle",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 16
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 17
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 18
         }
       }, "Be The First In The Q"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__BetaFeatures__["a" /* default */], {
         header: "Request a beta invite and get",
+        img_a: "./static/img/chaQ-lp-V2-02.png",
+        img_b: "./static/img/chaQ-lp-V2-03.png",
+        img_c: "./static/img/chaQ-lp-V2-04.png",
         copy_a: "1 free month of premium access to the ChatQ app",
         copy_b: "First In The Q Profile Badge",
         copy_c: "1 more free month for every successful referral",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 19
         }
       })))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Grid"].Column, {
         mobile: 16,
         computer: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 32
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Card"], {
         className: "card--elevate3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 33
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Card"].Content, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 34
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h4", {
         className: "text-center no-margin",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 35
         }
       }, "Join our beta waitlist"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
         className: "text-center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 36
         }
       }, "1,000 users, Apple iOS only"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__BetaForm__["a" /* default */], {
-        config: this.props.config,
+        config: __WEBPACK_IMPORTED_MODULE_5__config__["a" /* default */],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 37
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h5", {
         id: "countdown",
         className: "text-center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 38
         }
       }, __WEBPACK_IMPORTED_MODULE_4__days__["a" /* default */], " days until launch!"))))))));
     }
@@ -2855,7 +2855,6 @@ function (_Component) {
           lineNumber: 20
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Hero__["a" /* default */], {
-        config: __WEBPACK_IMPORTED_MODULE_14__config__["a" /* default */],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 21
@@ -2914,7 +2913,17 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ "./routes.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var routes = __webpack_require__("next-routes")();
+
+routes.add('/ThankYou/:referralCode', '/ThankYou');
+module.exports = routes;
+
+/***/ }),
+
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/index.js");
@@ -2926,6 +2935,13 @@ module.exports = __webpack_require__("./pages/index.js");
 /***/ (function(module, exports) {
 
 module.exports = require("axios");
+
+/***/ }),
+
+/***/ "next-routes":
+/***/ (function(module, exports) {
+
+module.exports = require("next-routes");
 
 /***/ }),
 

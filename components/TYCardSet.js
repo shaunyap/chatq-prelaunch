@@ -37,7 +37,7 @@ class TYReferral extends Component {
                  <Card.Content>
                    <Card.Header className="text-center">First in the Q badge</Card.Header>
                    <div className="flex-center card-img">
-                    <img src="./static/img/chaQ-lp-V2-03.png" />
+                    <img src="../static/img/chaQ-lp-V2-03.png" />
                   </div>
                    <Card.Meta className="text-center">&nbsp;</Card.Meta>
                  </Card.Content>

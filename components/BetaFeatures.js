@@ -9,7 +9,7 @@ class BetaFeatures extends Component {
         <Grid>
           <Grid.Row className="no-padding">
             <Grid.Column width={3}>
-              <img src="./static/img/chaQ-lp-V2-02.png" />
+              <img src={this.props.img_a} />
             </Grid.Column>
             <Grid.Column width={7}>
             <div className="flex-middle">
@@ -19,7 +19,7 @@ class BetaFeatures extends Component {
           </Grid.Row>
           <Grid.Row className="no-padding">
             <Grid.Column width={3}>
-              <img src="./static/img/chaQ-lp-V2-03.png" />
+              <img src={this.props.img_b} />
             </Grid.Column>
             <Grid.Column width={7}>
             <div className="flex-middle">
@@ -29,7 +29,7 @@ class BetaFeatures extends Component {
           </Grid.Row>
           <Grid.Row className="no-padding">
           <Grid.Column width={3}>
-              <img src="./static/img/chaQ-lp-V2-04.png" />
+              <img src={this.props.img_c} />
             </Grid.Column>
             <Grid.Column width={7}>
             <div className="flex-middle">
