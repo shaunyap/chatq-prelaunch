@@ -1,10 +1,14 @@
 // Settings
 $primary-color: #E35E2A;
 $secondary-color: #393F50;
+$copy-color: #687989;
 $white: #EAEAEA;
 
 // layout
 // ==============================
+body {
+  background: url(../img/background.png)
+}
 
 .flex-center {
   display: flex;
@@ -15,6 +19,20 @@ $white: #EAEAEA;
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+.no-padding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.no-margin {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.bmargin {
+  margin-bottom: 1rem;
 }
 
 section {
@@ -47,8 +65,17 @@ footer {
 
 // Typography
 // ==============================
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+}
+
 h1 {
   font-size: 4em;
+  line-height: 4rem;
 }
 
 h2 {
@@ -69,6 +96,7 @@ h5 {
 
 p {
   font-size: 1.1em;
+  color: $copy-color;
 }
 
 .text-center {
@@ -77,6 +105,10 @@ p {
 
 .text-primary {
   color: $primary-color;
+}
+
+.text-copy {
+  color: $copy-color;
 }
 
 .bold {
@@ -106,11 +138,18 @@ p {
 // ==============================
 
 .hero {
-  margin: 5rem 0;
+  margin: 3.5rem 0;
 }
 
-.hero--form {
-  padding: 3rem 0;
+#hero--form {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  min-width: 300px;
+  max-width: 450px;
+}
+
+#countdown {
+  margin-bottom: 1rem;
 }
 
 
@@ -147,18 +186,19 @@ p {
 .ui .card {
   width: 100%;
   @media (min-width: 640px) {
-    padding: 2rem;
+    padding: 1.5frem;
   }
 }
 
 .ui .card {
   .form {
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
 }
 
 .ui.card.card--elevate3 {
   box-shadow: 5px 12px 26px rgba(0,0,0,0.30), 0 10px 12px rgba(0,0,0,0.22);
+  padding-top: 1rem;
 }
 
 // Referral component
@@ -167,7 +207,7 @@ p {
   margin-top: 3rem;
 
   .referral--grid--copy {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 
@@ -192,5 +232,55 @@ p {
 
   p {
     color: #555;
+  }
+}
+
+// Thank You Referral Hero component
+// ==============================
+.social-labels {
+  margin-top: 2rem;
+}
+
+.referralLinkContainer{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  .referralLink {
+    width: 70%;
+  }
+}
+
+#cardset--facebook-label, #cardset--twitter-label, #cardset--messenger-label {
+  color: #FFF;
+}
+
+#cardset--facebook-label {
+  background-color: #3b5998;
+}
+
+#cardset--twitter-label {
+  background-color: #1da1f2;
+}
+
+#cardset--messenger-label {
+  background-color: #0084FF;
+}
+
+.testimonialContainer {
+  margin-top: 3rem;
+  max-width: 350px;
+}
+
+// Thank You Referral component
+// ==============================
+.ty--referralCell__img {
+  max-width: 150px;
+}
+
+.card-img {
+  margin-top: 20px;
+  margin-bottom: 14px;
+
+  img {
+    max-height: 56px;
   }
 }

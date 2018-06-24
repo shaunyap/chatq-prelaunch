@@ -4,7 +4,7 @@ import axios from 'axios';
 import Router from 'next/router';
 let referralCode;
 
-class BetaForm extends Component {
+class BetaForm2 extends Component {
   state = {
     fname: '',
     email: '',
@@ -70,4 +70,4 @@ class BetaForm extends Component {
   )}
 }
 
-export default BetaForm;
+export default BetaForm2;

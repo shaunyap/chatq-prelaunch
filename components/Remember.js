@@ -40,12 +40,14 @@ class Remember extends Component {
                 <h2>3</h2>
               </Grid.Column>
               <Grid.Column width={14}>
-              <p>TBD</p>
+              <p>Android users can sign up here for updates on ChatQ&apos;s Android OS launch. Our current release goal is 4Q2018.</p>
               </Grid.Column>
             </Grid>
           </Grid.Column>
           </Grid>
-          
+
+          <p><a href="#">See full terms and conditions.</a></p>
+
         </Container>
       </section>
     )

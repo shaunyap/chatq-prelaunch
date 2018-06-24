@@ -14,10 +14,10 @@ class Referral extends Component {
 
         <Container>
           <Grid className="referral--grid" centered columns={4}>
-            <ReferralCell img="https://gradientjoy.com/100x100" header="Request beta invite" copy="Get 1 month free premium access" />
-            <ReferralCell img="https://gradientjoy.com/100x100" header="Get a referral Link" copy="" />
-            <ReferralCell img="https://gradientjoy.com/100x100" header="Start referring" copy="Get 1 month for each referral" />
-            <ReferralCell img="https://gradientjoy.com/100x100" header="Explore ChatQ" copy="at launch" />
+            <ReferralCell img="./static/img/chaQ-lp-V2-05.png" header="Request beta invite" copy="Get 1 month free premium access" />
+            <ReferralCell img="./static/img/chaQ-lp-V2-06.png" header="Get a referral Link" copy="" />
+            <ReferralCell img="./static/img/chaQ-lp-V2-07.png" header="Start referring" copy="Get 1 month for each referral" />
+            <ReferralCell img="./static/img/chaQ-lp-V2-08.png" header="Explore ChatQ" copy="at launch" />
           </Grid>
         </Container>
       </section>

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Grid } from 'semantic-ui-react'
+import Carousel from 'nuka-carousel';
 
 class BenefitsImgRight extends Component {
   render (){
@@ -15,7 +16,13 @@ class BenefitsImgRight extends Component {
         </Grid.Column>
         <Grid.Column>
           <div className="flex-center">
-          <img src={this.props.img} />
+          <Carousel
+            renderCenterRightControls={() => {return}}
+            renderCenterLeftControls={() => {return}}
+          >
+            <img src={this.props.imga} />
+            <img src={this.props.imgb} />
+          </Carousel>
           </div>
         </Grid.Column>
       </Grid.Row>

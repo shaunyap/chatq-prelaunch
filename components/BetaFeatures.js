@@ -5,36 +5,35 @@ class BetaFeatures extends Component {
   render (){
     return (
       <div>
-        <p>Join our beta waitlist. 1,000 users only. <br /> Apple iOS only.</p>
-        <p className="bold">Request a beta invite and get:</p>
+        <p>Request a beta invite and get:</p>
         <Grid>
-          <Grid.Row>
+          <Grid.Row className="no-padding">
             <Grid.Column width={3}>
-              <img src="https://gradientjoy.com/60x60" />
+              <img src="./static/img/chaQ-lp-V2-02.png" />
             </Grid.Column>
-            <Grid.Column width={9}>
+            <Grid.Column width={7}>
             <div className="flex-middle">
-              <p>1 free month of premium access to the ChatQ app</p>
+              <p>{this.props.copy_a}</p>
             </div>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row>
+          <Grid.Row className="no-padding">
             <Grid.Column width={3}>
-              <img src="https://gradientjoy.com/60x60" />
+              <img src="./static/img/chaQ-lp-V2-03.png" />
             </Grid.Column>
-            <Grid.Column width={9}>
+            <Grid.Column width={7}>
             <div className="flex-middle">
-              <p>First In The Q Profile Badge</p>
+              <p>{this.props.copy_b}</p>
             </div>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row>
-            <Grid.Column width={3}>
-              <img src="https://gradientjoy.com/60x60" />
+          <Grid.Row className="no-padding">
+          <Grid.Column width={3}>
+              <img src="./static/img/chaQ-lp-V2-04.png" />
             </Grid.Column>
-            <Grid.Column width={9}>
+            <Grid.Column width={7}>
             <div className="flex-middle">
-              <p>1 more free month for every successful referral</p>
+              <p>{this.props.copy_c}</p>
             </div>
             </Grid.Column>
           </Grid.Row>

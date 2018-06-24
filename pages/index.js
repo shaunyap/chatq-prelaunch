@@ -25,7 +25,7 @@ class Prelaunch extends Component {
         <Benefits />
         <Referral />
         <ProductTable />
-        <FooterForm />
+        <FooterForm config={config}/>
         <Remember />
       </Layout>
     )

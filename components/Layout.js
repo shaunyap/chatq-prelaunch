@@ -11,9 +11,10 @@ export default props => {
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-TWKJDVV');`}} />
-
           <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"></link>
           <link rel="stylesheet" href="/static/styles/style.css"></link>
+          <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"></link>
+
         </Head>
           <noscript dangerouslySetInnerHTML={{__html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWKJDVV"
           height="0" width="0" style="display:none;visibility:hidden"></iframe>`}} />

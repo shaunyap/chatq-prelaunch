@@ -9,7 +9,8 @@ class ReferralCell extends Component {
             <img src={this.props.img} />
           </div>
             <p className="text-center referral--grid--copy">
-              <span className="bold">{this.props.header}</span><br />
+              <span className="bold">{this.props.header}</span>
+              {this.props.header? <br />: '' }
               {this.props.copy}
             </p>
         </Grid.Column>

@@ -5,6 +5,7 @@ import Router from 'next/router';
 let referralCode;
 
 class BetaForm extends Component {
+  // TODO pull referral query, put it into state, and pass it into the vl_user obj 
   state = {
     fname: '',
     email: '',
@@ -50,7 +51,8 @@ class BetaForm extends Component {
 
   render (){
     return (
-      <Form className="hero--form" onSubmit={this.onSubmit}>
+      <div className="flex-center">
+      <Form id="hero--form" onSubmit={this.onSubmit}>
           <Form.Input fluid
             placeholder='First name'
             value={this.state.fname}
@@ -65,6 +67,7 @@ class BetaForm extends Component {
             <Button className="button--primary-gradient" loading={this.state.loading}>Invite me!</Button>
            </div>
       </Form>
+      </div>
   )}
 }
 
