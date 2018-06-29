@@ -7,8 +7,10 @@ class BenefitsImgLeft extends Component {
     return (
       <Grid.Row>
         <Grid.Column>
-          <div className="flex-center">
+          <div className="flex-center iphoneBG">
           <Carousel
+          autoplay = {true}
+          wrapAround = {true}
           renderCenterRightControls={() => {return}}
           renderCenterLeftControls={() => {return}}
           >

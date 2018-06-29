@@ -15,26 +15,20 @@ class Benefits extends Component {
           <h2 className="text-center">Why <span className="text-primary">ChatQ?</span></h2>
           <Grid stackable centered columns={3}>
           <BenefitsImgLeft
-            imga="https://gradientjoy.com/350x500"
-            imgb="https://gradientjoy.com/350x500"
+            imga="../static/img/benefits/1customAlerts_01.png"
+            imgb="../static/img/benefits/1customAlerts_02.png"
             header="Set custom alerts for market movements you care about"
             copy="Choose from 10 smart, customizable bots. Receive personalized alerts based on market signals."
           />
           <BenefitsImgRight
-          imga="https://gradientjoy.com/350x500"
-          imgb="https://gradientjoy.com/350x500"
+            imga="../static/img/benefits/2connect_01.png"
+            imgb="../static/img/benefits/2connect_02.png"
             header="Connect with your trading heroes"
             copy="Use direct chats to reach out to key market influencers and build your tribe."
           />
           <BenefitsImgLeft
-            imga="https://gradientjoy.com/350x500"
-            imgb="https://gradientjoy.com/350x500"
-            header="Inspiration and research for your trades"
-            copy="Aggregated market sentiment at the swipe of a finger."
-          />
-          <BenefitsImgRight
-            imga="https://gradientjoy.com/350x500"
-            imgb="https://gradientjoy.com/350x500"
+            imga="../static/img/benefits/3rewarded_01.png"
+            imgb="../static/img/benefits/3rewarded_02.png"
             header="Share your opinions and get rewarded"
             copy="Voice your sentiment through polling. Receive Qredits for your expertise, and use them to unlock features in the app."
           />

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Container, Card } from 'semantic-ui-react';
 import BetaFeatures from './BetaFeatures';
 import BetaForm from './BetaForm';
-import days from '../days';
+import days from '../functions/days';
 import config from '../config'
 
 class HeroGrid extends Component {
@@ -34,7 +34,7 @@ class HeroGrid extends Component {
                 <Card.Content>
                   <h4 className="text-center no-margin">Join our beta waitlist</h4>
                   <p className="text-center">1,000 users, Apple iOS only</p>
-                  <BetaForm config={config}/>
+                  <BetaForm config={config} referrerCode={this.props.referrerCode}/>
                   <h5 id="countdown" className="text-center">{days} days until launch!</h5>
                 </Card.Content>
               </Card>

@@ -173,6 +173,19 @@ p {
   margin-bottom: 1rem;
 }
 
+.iphoneBG {
+  background: url('../img/iphone8.png');
+  min-width:301px;
+  max-width:301px;
+  min-height:600px;
+  max-height:600px;
+
+  .slider {
+    max-width:250px;
+    top: 72px;
+  }
+}
+
 // Announcement Bar components
 // ==============================
 

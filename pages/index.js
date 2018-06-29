@@ -14,11 +14,21 @@ import Remember from '../components/Remember';
 import { Container, Grid } from 'semantic-ui-react';
 import config from '../config';
 
+let referrerCode;
+import Link from 'next/link'
+
 class Prelaunch extends Component {
+  static async getInitialProps(props) {
+    const referralCode = await props.query.referralCode
+    return {
+      referralCode: referralCode
+    }
+  }
   render() {
     return (
+
       <Layout>
-        <Hero/>
+        <Hero referrerCode={this.props.referralCode}/>
         <AnnouncementBar number="2,037" text="traders are on the beta waitlist!" />
         <Explainer />
         <Testimonial />

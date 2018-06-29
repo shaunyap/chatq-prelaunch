@@ -6,20 +6,34 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "docker:build": "docker build -t chatqprelaunch .",
+    "docker:clean": "docker rm -f chatqprelaunch || true",
+    "docker:run": "docker run -p 7878:3000 -d --name chatqprelaunch chatqprelaunch && npm run docker:logs",
+    "docker:stop": "docker stop chatqprelaunch",
+    "docker:start": "docker start chatqprelaunch && npm run docker:logs",
+    "docker:logs": "docker logs -f chatqprelaunch",
+    "deploy": "npm run docker:build && npm run docker:clean && npm run docker:run"
+
   },
   "author": "Shaun Yap",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
     "mailchimp-api-v3": "^1.12.0",
+    "net": "^1.0.2",
     "next": "6.0.3",
     "next-routes": "^1.4.2",
     "nuka-carousel": "^4.2.2",
     "react": "^16.4.0",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
     "semantic-ui-css": "^2.3.1",
-    "semantic-ui-react": "^0.81.1"
+    "semantic-ui-react": "^0.81.1",
+    "tls": "0.0.1",
+    "unirest": "^0.5.1"
   }
 }

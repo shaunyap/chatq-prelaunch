@@ -17,7 +17,7 @@ class Hero extends Component {
           </Grid.Column>
         </Grid.Row>
       </Grid>
-      <HeroGrid/>
+      <HeroGrid referrerCode={this.props.referrerCode}/>
     </section>
   )}
 }

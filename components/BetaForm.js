@@ -5,18 +5,21 @@ import {Router} from '../routes'
 let referralCode;
 
 class BetaForm extends Component {
-  // TODO pull referral query, put it into state, and pass it into the vl_user obj
   state = {
     fname: '',
     email: '',
-    loading: false
+    loading: false,
   };
 
   onSubmit = event => {
     event.preventDefault();
     this.setState({loading: true});
 
-    const vl_header = {headers: { "Content-Type": "application/json" }};
+    const vl_header = {headers:
+      {
+        "Access-Control-Allow-Origin": '*',
+        "Content-Type": "application/json"
+    }};
     const vl_user = {
       "params": {
         "event": "registration",
@@ -26,7 +29,7 @@ class BetaForm extends Component {
             "lanuage": "EN"
         },
         "referrer": {
-            "referralCode": "",
+            "referralCode": this.props.referrerCode,
             "email": ""
         },
         "refSource": ""
@@ -37,11 +40,10 @@ class BetaForm extends Component {
     axios.post(`https://app.viral-loops.com/api/v2/events`, vl_user, vl_header)
     .then(res => {
       referralCode = res.data.referralCode;
-
     })
     .then(() =>  {
       this.setState({loading: false});
-      Router.pushRoute(`/ThankYou?${referralCode}`)
+      Router.pushRoute(`/ThankYou/${referralCode}`)
     });
   };
 
