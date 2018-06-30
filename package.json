@@ -9,7 +9,7 @@
     "start": "next start",
     "docker:build": "docker build -t chatqprelaunch .",
     "docker:clean": "docker rm -f chatqprelaunch || true",
-    "docker:run": "docker run -p 7878:3000 -d --name chatqprelaunch chatqprelaunch && npm run docker:logs",
+    "docker:run": "docker run -p 3000:3000 -d --name chatqprelaunch chatqprelaunch && npm run docker:logs",
     "docker:stop": "docker stop chatqprelaunch",
     "docker:start": "docker start chatqprelaunch && npm run docker:logs",
     "docker:logs": "docker logs -f chatqprelaunch",

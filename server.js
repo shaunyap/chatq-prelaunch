@@ -4,6 +4,7 @@ const routes = require('./routes');
 
 const app = next({
   dev: process.env.NODE_ENV !== 'production',
+  dir: './bin'
 });
 
 const handler = routes.getRequestHandler(app);

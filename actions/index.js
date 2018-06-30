@@ -7,14 +7,18 @@ export function getReferralCount(referralCode){
     headers: {
       "Content-Type": "application/json",
       apiToken: config.viralLoopAPI,
-      participants: [ {"referralCode": referralCode} ]
    }
   }
 
   return(dispatch) => {
     axios.get(`https://app.viral-loops.com/api/v2/participant_data`, vl_config)
       .then((res) => {
-        dispatch(returnReferralCount(res.data.data[0].counters.referrals.total))
+        let allUsers = res.data.data;
+        let foundUser = allUsers.find((userObj) => {
+            return userObj.user.referralCode === referralCode;
+        })
+        let userReferrals = foundUser.counters.referrals.total;
+        dispatch(returnReferralCount(userReferrals))
       })
       .catch((err) => {
         dispatch(returnReferralCount('error: ' + err))
